@@ -1,0 +1,518 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25em;
+}
+
+.violet {
+  color: blueviolet;
+}
+
+.boton {
+  font-size: 1.5;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blueviolet;
+  text-decoration: none;
+  transform: translate(-50% -50%);
+  animation: animacion 2s linear infinite;
+}
+
+@keyframes animacion {
+  0% {
+    box-shadow: 0 0 0 0 rgb(50, 18, 81);
+  }
+  30% {
+    box-shadow: 0 0 0 10pxpx rgb(50, 18, 81);
+  }
+  65% {
+    box-shadow: 0 0 0 10px rgb(50, 18, 81);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(50, 18, 81);
+  }
+}
+b:hover {
+  background-color: rgb(50, 18, 81);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-acento {
+  color: blueviolet;
+}
+
+/*...............index.................*/
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: rgb(245, 245, 245);
+}
+
+#somos-academiacafe .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#servicios {
+  background-color: rgb(30, 30, 30);
+  color: rgb(245, 245, 245);
+  text-align: center;
+}
+
+#servicios .container {
+  padding: 150px 12px;
+}
+
+#servicios h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#servicios p {
+  display: none;
+}
+
+#servicios .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cursos.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tostaduria.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.carta:nth-child(4) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tienda.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#contactos .container {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  color: rgb(245, 245, 245);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#listo-paraaprender {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  color: rgb(245, 245, 245);
+  height: 80vh;
+}
+
+#listo-paraaprender h2 {
+  font-size: 9vw;
+}
+
+#listo-paraaprender button {
+  font-size: 5vw;
+}
+
+#listo-paraaprender {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/listoparaaprender.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 780px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 10px;
+    grid-column: 1/-1;
+  }
+}
+/*................termina index...............*/
+/*................cursos...............*/
+.articlecursos, .reco {
+  background-color: rgb(245, 245, 245);
+  padding: 5px;
+}
+
+.articlecursos, .tipe {
+  background-color: rgb(50, 18, 81);
+  color: aliceblue;
+  padding: 5px;
+}
+
+.articlecursos h5 {
+  background-color: blueviolet;
+  color: aliceblue;
+  padding: 5px;
+  text-align: center;
+}
+
+.reco {
+  background-color: blueviolet;
+  color: aliceblue;
+  padding: 5px;
+  text-align: center;
+}
+
+.text-center {
+  background-color: blueviolet;
+  padding: 5px;
+  color: aliceblue;
+}
+
+.footercurso {
+  background-color: rgb(245, 245, 245);
+  padding: 5px;
+}
+
+/*................termina cursos...............*/
+/*................nosotros...............*/
+#somos-academiacafe1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: rgb(245, 245, 245);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/somosacademiacafe.jpg.crdownload);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#video {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tienda.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  height: 50vh;
+}
+
+/*................termina nosotros...............*/
+/*................contactos...............*/
+#contactos1 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: rgb(245, 245, 245);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/contactonav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.registro {
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/registros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.registro h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid blueviolet;
+  font-family: "calibri";
+  font-size: 18px;
+}
+
+.registro p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.registro a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+}
+
+.registro a:hover {
+  color: rgb(245, 245, 245);
+  text-decoration: underline;
+}
+
+.registro .botons {
+  font-size: 1.5;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: rgb(245, 245, 245);
+  background-color: blueviolet;
+  width: 100%;
+}
+
+.botons:hover {
+  background-color: rgb(50, 18, 81);
+}
+
+/*................termina nosotros...............*/
+/*................tienda...............*/
+.title {
+  text-align: center;
+}
+
+.tiendagrid {
+  background-color: rgb(245, 245, 245);
+}
+
+.containertienda {
+  width: 90%;
+  max-width: 1000%;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.containertienda .content,
+.containertienda .sidebar,
+.containertienda .post,
+.containertienda .footertienda,
+.containertienda .title {
+  background: rgb(245, 245, 245);
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.containertienda .title,
+.containertienda .footertienda {
+  grid-column: 1/6;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/registros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: aliceblue;
+}
+
+.content .article {
+  background-color: rgb(50, 18, 81);
+  color: aliceblue;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+.content .article h2,
+.content .article p {
+  padding: 10px;
+}
+
+.containertienda .content {
+  grid-column: span 3;
+}
+
+.containertienda .sidebar img {
+  width: 80%;
+  margin-top: 2px;
+}
+
+.containertienda .sidebar {
+  grid-column: span 2;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tostaduria.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containertienda .post {
+  background: rgb(50, 18, 81);
+  color: aliceblue;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.containertienda .post:hover {
+  cursor: pointer;
+  color: aliceblue;
+  background: blueviolet;
+}
+
+@media screen and (max-width: 780px) {
+  .tiendagrid {
+    text-align: center;
+  }
+  .containertienda .content {
+    grid-column: 1/-1;
+  }
+  .containertienda .sidebar {
+    grid-column: 1/-1;
+  }
+  .containertienda .post {
+    grid-column: 1/-1;
+  }
+}
+/*.............termina tienda...............*/
+/*.............tostaduria...............*/
+.carousel-caption h5, .parr {
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+}
+
+.carousel-inner .d-block {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+#tuestes {
+  background-color: rgb(245, 245, 245);
+  color: aliceblue;
+  text-align: center;
+}
+
+#tuestes .container {
+  padding: 150px 12px;
+}
+
+#tuestes h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#tuestes p {
+  display: none;
+}
+
+#tuestes .carta1 {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta1:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tuestesuave.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.carta1:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tostaduriaservicio.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.carta1:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tuesteintenso.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.footerall {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.............termina tostaduria...............*//*# sourceMappingURL=estilos.css.map */
