@@ -1,0 +1,106 @@
+.title{
+    text-align: center;
+}
+
+.tiendagrid{
+        background-color:  rgb(245,245,245);
+    }
+.containertienda{
+        width: 90%;
+        max-width: 1000%;
+        margin: 1.6em auto;
+        display: grid;
+        gap: 1.6em;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .containertienda .content, 
+    .containertienda .sidebar,
+    .containertienda .post,
+    .containertienda .footertienda,
+    .containertienda .title
+    {
+        background:  rgb(245,245,245);
+        padding: 20px;
+        border: 1px solid black
+    }
+    .containertienda .title,
+    .containertienda .footertienda{
+        grid-column: 1/6;
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url(../images/registros.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: aliceblue;
+    }
+    .content .article{
+        background-color: rgb(50, 18, 81);
+        color: aliceblue;
+        padding: 20px;
+        margin-top: 5px;
+    }
+    .content .article h2,
+    .content .article p{
+        padding: 10px;
+        
+    }
+    .containertienda .content{
+        grid-column: span 3;
+    }
+
+    .containertienda .sidebar img{
+        width: 80%;
+        margin-top: 2px;
+    }
+
+    .containertienda .sidebar{
+        grid-column: span 2;
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url(../images/tostaduria.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .containertienda .post{
+        background: rgb(50, 18, 81);
+        color: aliceblue;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease;
+
+    }
+    .containertienda .post:hover{
+        cursor: pointer;
+        color:aliceblue;
+        background: blueviolet;
+    }
+    @media screen and (max-width: 780px) {
+        .tiendagrid{
+        text-align: center;
+        } 
+        .containertienda .content{
+            grid-column: 1/-1;
+        }
+        .containertienda .sidebar{
+            grid-column: 1/-1;
+        }
+        .containertienda .post{
+            grid-column: 1/-1;
+        }
+    }

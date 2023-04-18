@@ -1,0 +1,89 @@
+#contactos1 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color:  rgb(245,245,245);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url(../images/contactonav.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .registro{
+        background: #24303c;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: 'calibri';
+        color: white;
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url(../images/registros.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .registro h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .controls{
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid blueviolet;
+        font-family: 'calibri';
+        font-size: 18px;
+    }
+
+    .registro p{
+        height: 40px;
+        text-align: center;
+        font-size: 18px; 
+    }
+
+    .registro a{
+        color: rgb(245,245,245);
+        text-decoration: none;
+
+    }
+
+    .registro a:hover{
+        color:  rgb(245,245,245);
+        text-decoration: underline;
+        
+    }
+
+    .registro .botons{
+        font-size: 1.5;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(0,0,0,0.5);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        color:  rgb(245,245,245);
+        background-color: blueviolet;
+        width: 100%;
+
+    }
+
+    .botons:hover{
+        background-color: rgb(50, 18, 81);
+    }

@@ -80,7 +80,6 @@ b:hover {
   color: blueviolet;
 }
 
-/*...............index.................*/
 header {
   background-color: rgb(245, 245, 245);
 }
@@ -154,7 +153,6 @@ header {
 }
 
 #contactos .container {
-  margin: 20px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -169,6 +167,9 @@ header {
 }
 
 #listo-paraaprender {
+  margin: 20px;
+  background-position: center center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,7 +177,7 @@ header {
   text-align: center;
   background-color: rgb(30, 30, 30);
   color: rgb(245, 245, 245);
-  height: 80vh;
+  height: 100vh;
 }
 
 #listo-paraaprender h2 {
@@ -204,9 +205,21 @@ header {
     padding-right: 10px;
     grid-column: 1/-1;
   }
+  .somos-academiacafe .container {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 10px;
+  }
 }
-/*................termina index...............*/
-/*................cursos...............*/
+.acadeh2 {
+  font-size: 2em;
+}
+
+@media (min-width: 480px) {
+  .acadeh2 {
+    font-size: 3.2em;
+  }
+}
 .articlecursos, .reco {
   background-color: rgb(245, 245, 245);
   padding: 5px;
@@ -243,8 +256,6 @@ header {
   padding: 5px;
 }
 
-/*................termina cursos...............*/
-/*................nosotros...............*/
 #somos-academiacafe1 {
   display: flex;
   align-items: center;
@@ -270,8 +281,6 @@ header {
   height: 50vh;
 }
 
-/*................termina nosotros...............*/
-/*................contactos...............*/
 #contactos1 .container {
   display: flex;
   align-items: center;
@@ -349,8 +358,6 @@ header {
   background-color: rgb(50, 18, 81);
 }
 
-/*................termina nosotros...............*/
-/*................tienda...............*/
 .title {
   text-align: center;
 }
@@ -452,8 +459,6 @@ header {
     grid-column: 1/-1;
   }
 }
-/*.............termina tienda...............*/
-/*.............tostaduria...............*/
 .carousel-caption h5, .parr {
   color: aliceblue;
   font-family: "Roboto", sans-serif;
@@ -513,6 +518,4 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/*.............termina tostaduria...............*//*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

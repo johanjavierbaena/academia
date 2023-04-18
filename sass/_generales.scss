@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+.violet{
+    color: blueviolet;
+}
+.boton{
+    font-size: 1.5;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+    transform: translate(-50% -50%);
+    animation: animacion 2s linear infinite;
+}
+
+@keyframes animacion{
+    0% {
+        box-shadow: 0 0 0 0 rgb(50, 18, 81);
+    }
+    30% {
+        box-shadow: 0 0 0 10pxpx rgb(50, 18, 81);
+    }
+    65% {
+        box-shadow: 0 0 0 10px rgb(50, 18, 81);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgb(50, 18, 81);
+    }
+}
+b:hover{
+    background-color: rgb(50, 18, 81);
+}
+.container{
+    max-width: 1400px;
+    margin: auto; 
+}
+.color-acento{color:blueviolet; }
